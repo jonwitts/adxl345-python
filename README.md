@@ -12,13 +12,13 @@ You can import the module and get a sensor reading like this:
     adxl345 = ADXL345()
 
     axes = adxl345.getAxes(True)
-    print "ADXL345 on address 0x%x:" % (adxl345.address)
-    print "   x = %.3fG" % ( axes['x'] )
-    print "   y = %.3fG" % ( axes['y'] )
-    print "   z = %.3fG" % ( axes['z'] )
+    print("ADXL345 on address 0x%x:" % (adxl345.address))
+    print("   x = %.3fG" % ( axes['x'] ))
+    print("   y = %.3fG" % ( axes['y'] ))
+    print("   z = %.3fG" % ( axes['z'] ))
 
 or you can run it directly from the command line like this:
 
-    sudo python ADXL345.py
+    python3 ADXL345.py
     
 which will output the current x, y, and z axis readings in Gs.
